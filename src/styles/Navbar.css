@@ -1,0 +1,111 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Ethereal", "Baskerville Old Face", "Baskerville", serif;
+}
+
+.navbar{
+    height: 20vh;
+    width : 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+    position: relative;
+    background-color: #B19F6F; 
+    top: 0;
+}
+
+.logo img{
+    height: 8rem;
+    width: 8rem;
+    margin-top: 8px;
+    margin-left: 30px;
+}
+
+.navelement{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 18px;
+}
+
+.navelement a{
+    color:black;
+    text-decoration: none;
+}
+
+.home a:hover{
+    color: white;
+}
+
+.contact a:hover{
+    color: white;
+}
+
+.help a:hover{
+    color: white;
+}
+
+.account a:hover{
+    color: white;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; 
+    width: 60px;  
+    margin-right: 20px;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative; /*Similar to static, but allows positioning offsets*/
+}
+
+.profile {
+    font-size: 2rem; /* Adjust icon size */
+    color: #333; 
+    margin-right: 8px;
+}
+
+.account{
+    font-size: 15px;
+    color: black;
+}
+
+.profile:hover{
+    cursor: pointer;
+}
+
+.drop-down{
+    display: none; /*hides the dropdown initially*/
+    position: absolute; /*brings the dropdown in the down position*/
+    top: 60px; /* Space below the icon */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white; 
+    border-radius: 8px; 
+    z-index: 10; /* Appear above other elements */
+}
+
+.drop-down a{
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.profile:hover .drop-down{
+    display: block; /*make dropdown visible*/
+}
+
+.drop-down a:hover{
+    background-color: #f0f0f0;
+    color: #B19F6F; 
+}
