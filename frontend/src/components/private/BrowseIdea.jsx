@@ -5,8 +5,6 @@ import bedroomImage from "../../assets/images/bedroom.jpg";
 import diningImage from "../../assets/images/dining.jpg";
 import kitchenImage from "../../assets/images/kitchen.jpg";
 import officeImage from "../../assets/images/office.jpg";
-import bathroomImage from "../../assets/images/bathroom.jpg";
-import modernImage from "../../assets/images/modern.jpg";
 import rusticImage from "../../assets/images/rustic.jpg";
 import bohemianImage from "../../assets/images/bohemian.jpg";
 import minimalistImage from "../../assets/images/minimalist.jpg";
@@ -24,11 +22,10 @@ function BrowseIdea() {
             title: "By Room",
             items: [
                 { name: "Living Room", path: "/LivingSection" },
-                { name: "Bed Room", path: "/BedroomSection" },
+                { name: "Bed Room", path: "/BedSection" },
                 { name: "Dining", path: "/DiningSection" },
                 { name: "Kitchen", path: "/KitchenSection" },
                 { name: "Office", path: "/OfficeSection" },
-                { name: "Bathroom", path: "/BathroomSection" }
             ],
             images: [
                 livingRoomImage, 
@@ -36,13 +33,12 @@ function BrowseIdea() {
                 diningImage, 
                 kitchenImage, 
                 officeImage, 
-                bathroomImage
+                
             ]
         },
         {
             title: "By Design",
             items: [
-                { name: "Modern", path: "/ModernSection" },
                 { name: "Rustic", path: "/RusticSection" },
                 { name: "Bohemian", path: "/BohemianSection" },
                 { name: "Minimalist", path: "/MinimalistSection" },
@@ -50,7 +46,6 @@ function BrowseIdea() {
                 { name: "Contemporary", path: "/ContemporarySection" }
             ],
             images: [
-                modernImage,
                 rusticImage,
                 bohemianImage,
                 minimalistImage,

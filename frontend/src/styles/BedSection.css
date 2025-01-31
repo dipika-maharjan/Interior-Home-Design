@@ -4,121 +4,131 @@
     box-sizing: border-box; 
 }
 
-.living-wrapper {
+.bed-wrapper {
     height: 100%;
     width: 100%;
 }
 
-.living-heading {
+.bed-heading {
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    margin-bottom: 40px;
     text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #F4ECE3, #E8E5DE); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.living-heading img {
-    height: 70vh;
-    width: 40%;
-    margin-left: 50px;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+.bed-heading h1 {
+    font-size: 2.5rem; 
+    letter-spacing: 1.5px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative; 
 }
 
-.living-description {
+.bed-section h2 {
+    font-size: 1.8rem; 
+    color: #333333; 
+    text-align: center;
+    margin-bottom: 15px; 
+    font-weight: 500;
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+    position: relative; 
+}
+
+.bed-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px; 
+    background: #B19F6F; 
+    margin: 10px auto 0; 
+    border-radius: 1px; 
+}
+
+
+.bed-frontimage img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    max-height: 500px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bed-description {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #E8E5DE;
-    border-radius: 8px; 
-    height: 70vh;
     margin-right: 50px;
-    width: 50%;
     padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.living-description h1 {
-    font-size: 36px;
-    color: #4A4A4A;
-    margin-bottom: 20px; 
-    text-align: center;
-}
-
-.living-description p {
+.bed-description p {
     margin-top: 20px;
-    font-size: 18px;
-    color: #6B4226;
-    font-style: italic;
-    background-color: #F4ECE3;
+    font-size: 20px;
     padding: 15px;
     border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     line-height: 1.6;
 }
 
-.living-category h1 {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    font-size: 32px;
-    color: #4A4A4A;
-    letter-spacing: 1px; 
-}
-
-.living-section {
+.bed-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 17px; 
-    margin-top: 8rem;
+    gap: 10px; /* Consistent gap between items */
+    margin-top: 2rem;
     margin-bottom: 5rem;
 }
 
-.living-section h2 {
-    font-size: 30px;
-    color: #4A4A4A;
+.bed-section h2 {
+    font-size: 24px; /* Consistent font size */
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.living-section p {
+.bed-section p a {
     font-size: 16px;
     font-weight: bold;
-    font-style: italic;
-    color: #B19F6F;
-    text-align: center;
-    margin-bottom: 1.5rem;
+    color: #1a1a1a; /* Dark color for links */
+    text-decoration: none; /* Remove underline */
 }
 
-.living:hover {
-    transform: translateY(-5px); 
-}
-
-/* .living-box{
-    height: 600px;
-    width: 40%;
-    margin: 20px;
-} */
-
-
-.living-image img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.living-image:hover img {
-    transform: scale(1.05); 
-    opacity: 0.95;
+.bed-section p a:hover {
     cursor: pointer;
+    color: rgb(230, 142, 28); /* Orange color on hover */
+}
+
+.Bed-box {
+    height: 500px; /* Fixed height for consistency */
+    width: 30%; /* Fixed width for two columns */
+    margin: 20px; /* Margin around each box */
+}
+
+.Bed-image img {
+    height: 350px; /* Fixed height for images */
+    width: 100%; /* Full width of the container */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-top: 1rem; /* Spacing above the image */
+    margin-bottom: 1rem; /* Spacing below the image */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.Bed-image img:hover {
+    cursor: pointer;
+    animation: shrinkEffect 0.5s ease-in-out forwards; /* Hover animation */
 }
 
 @keyframes shrinkEffect {
@@ -127,20 +137,13 @@
         opacity: 1;
     }
     100% {
-        transform: scale(0.95);
-        opacity: 0.95;
+        transform: scale(0.9); /* Shrinks the element */
+        opacity: 0.9; /* Slight fade */
     }
 }
 
-.living-content {
+.Bed-content {
     text-align: center;
     margin-left: 14px;
     margin-right: 14px;
-}
-
-.living-content h2 {
-    margin-top: 30px;
-    font-size: 20px;
-    color: #4A4A4A;
-    font-weight: bold;
 }

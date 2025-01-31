@@ -11,6 +11,9 @@ import SignupPage from './components/public/Signup';
 import BookConsultation from './components/private/BookConsultation';
 import LivingSection from './components/private/LivingSection';
 import BedSection from './components/private/BedSection';
+import DiningSection from './components/private/DiningSection';
+import KitchenSection from './components/private/KitchenSection';
+import OfficeSection from './components/private/Office';
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
           <Route path="/BookConsultation" element={<BookConsultation />} />
           <Route path="/LivingSection" element={<LivingSection />} />
           <Route path="/BedSection" element={<BedSection />} />
+          <Route path="/DiningSection" element={<DiningSection />} />
+          <Route path="/KitchenSection" element={<KitchenSection />} />
+          <Route path="/OfficeSection" element={<OfficeSection />} />
         </Routes>
         <Footer />
       </div>

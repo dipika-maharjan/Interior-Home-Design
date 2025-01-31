@@ -1,127 +1,60 @@
 import React from "react";
 import '../../styles/BedSection.css';
-import FamilyLiving from '../../assets/images/FamilyLiving.jpg';
-import EntertainmentLiving from '../../assets/images/EntertainmentLiving.webp';
-import ReadingNook from '../../assets/images/ReadingNook.jpg';
-import OpenConcept from '../../assets/images/OpenConcept.jpg';
-import SmallSpace from '../../assets/images/SmallSpace.jpg';
-import NatureInspired from '../../assets/images/NatureInspired.jpg';
-import Vintage from '../../assets/images/Vintage.jpg';
-import Eclectic from '../../assets/images/Eclectic.jpg';
-import CoastalCottage from '../../assets/images/CoastalCottage.jpg';
-import BedroomSpacesIdeas from '../../assets/images/bedroom spaces ideas.png'
+import BedSpaceIdeas from '../../assets/images/bedroomspaces.jpeg'
+import MasterRoom from '../../assets/images/masterbedroom.jpg'
+import GuestRoom from '../../assets/images/guestroom.jpg'
+import KidsRoom from '../../assets/images/kidsroom.jpg'
+import StudioRoom from '../../assets/images/studioroom.jpg'
+import LoftRoom from '../../assets/images/loftroom.jpg'
+import TeenRoom from '../../assets/images/teenroom.webp'
+import EclecticRoom from '../../assets/images/eclecticroom.jpeg'
+import FrenchRoom from '../../assets/images/frenchroom.jpg'
+import ColorfulRoom from '../../assets/images/colorfulroom.jpg'
 
-function BedSection(){
-    return(
-        <div>
-            <div className="living-wrapper">
-                <div className="living-heading">
-                    <img src ={BedroomSpacesIdeas} alt="Bedroom Space Ideas"/>
-                    <div className="living-description">
-                    <h1>Bedroom Spaces Ideas</h1>
-                    <p>
-                    Living spaces are the heart of the home, where memories are made. <br/>
-                    Whether it’s family movie nights, entertaining guests, or relaxing with a book, these rooms should be cozy, functional, and inspiring. <br/>
-                    From practical furniture to a warm fireplace, create a space you'll love spending time in.</p>
-                    </div>
-                </div>
+function BedSection() {
+    return (
+        <div className="bed-wrapper">
+            <div className="bed-heading">
+                <h1>Bedroom Spaces Ideas</h1>
+            </div>
 
+            <div className="bed-frontimage">
+                <img src={BedSpaceIdeas} alt="Bed Space Ideas" />
+            </div>
+            
+            <div className="bed-description">     
+                <p>
+                "Your bedroom is your personal sanctuary, a place to unwind and recharge. <br/>
+                Whether it's a peaceful retreat after a long day or a cozy spot to start your morning, this space should reflect your style and provide comfort. <br/>
+                From plush bedding to calming decor, create a restful environment where you can escape, relax, and feel at home."
+                </p>
+            </div>
 
-                <div className="living-section">
-                    <div className="living-box">
-                        <div className="living-content">
-                            <h2>Family Living Room</h2>
-                            <div className="living-image">
-                            <img src={FamilyLiving} alt="Family Living Room" />
+            <div className="bed-section">
+                {[
+                    { title: "Master Bedroom", image: MasterRoom, description: "Elegant and spacious." },
+                    { title: "Guest Bedroom", image: GuestRoom, description: "Cozy and inviting." },
+                    { title: "Kids Bedroom", image: KidsRoom, description: "Fun and playful." },
+                    { title: "Studio Bedroom", image: StudioRoom, description: "Compact and multifunctional." },
+                    { title: "Loft Bedroom", image: LoftRoom, description: "Airy and open." },
+                    { title: "Teen Bedroom", image: TeenRoom, description: "Trendy and personal." },
+                    { title: "Eclectic Bedroom", image: EclecticRoom, description: "Unique and creative." },
+                    { title: "French Chic Master Bedroom", image: FrenchRoom, description: "Sophisticated and serene." },
+                    { title: "Colorful Modern Bedroom", image: ColorfulRoom, description: "Bold and retro.." },
+                ].map((item, index) => (
+                    <div className="Bed-box" key={index}>
+                        <div className="Bed-content">
+                            <h2>{item.title}</h2>
+                            <div className="Bed-image">
+                                <img src={item.image} alt={item.title} />
                             </div>
-                            <p>Kid-friendly, durable furniture, and playful touches for family activities.</p>
+                            <p>{item.description}</p>
                         </div>
                     </div>
-
-                    <div className="living-box">
-                        <div className="living-content">
-                            <h2>Entertainment Living Room</h2>
-                            <div className="living-image">
-                            <img src={EntertainmentLiving} alt="Entertainment Living Room" />
-                            </div>
-                            <p>A media-centric setup with a big-screen TV, sound systems, and cozy seating.</p>
-                        </div>
-                    </div>
-
-                    <div className="living-box">
-                        <div className="living-content">
-                            <h2>Reading Nook Living Room</h2>
-                            <div className="living-image">
-                            <img src={ReadingNook} alt="ReadingNook Living Room" />
-                            </div>
-                            <p>A peaceful corner with bookshelves, soft lighting, and a comfy chair.</p>
-                        </div>
-                    </div>
-
-                    <div className="living-box">
-                        <div className="living-content">
-                            <h2>Open-Concept Living Room</h2>
-                            <div className="living-image">
-                            <img src={OpenConcept} alt="OpenConcept Living Room" />
-                            </div>
-                            <p> Spacious, airy, and seamlessly connected.</p>
-                        </div>
-                    </div>
-
-                    <div className="living-box">
-                        <div className="living-content">
-                            <h2>Eclectic Living Room</h2>
-                            <div className="living-image">
-                            <img src={Eclectic} alt="Eclectic Living Room" />
-                            </div>
-                            <p>A mix of diverse styles and colors.</p>
-                        </div>
-                    </div>
-
-                    <div className="living-box">
-                        <div className="living-content">
-                            <h2>Coastal Cottage Living Room</h2>
-                            <div className="living-image">
-                            <img src={CoastalCottage } alt="Family Living Room" />
-                            </div>
-                            <p>A light, airy space with soft blues, and natural textures.</p>
-                        </div>
-                    </div>
-
-                    <div className="living-box">
-                        <div className="living-content">
-                            <h2>Small Space Living Room</h2>
-                            <div className="living-image">
-                            <img src={SmallSpace} alt="SmallSpace Living Room" />
-                            </div>
-                            <p> Compact designs that maximize functionality and style in limited space.</p>
-                        </div>
-                    </div>
-
-                    <div className="living-box">
-                        <div className="living-content">
-                            <h2>Nature-Inspired Living Room</h2>
-                            <div className="living-image">
-                            <img src={NatureInspired} alt="NatureInspired Living Room" />
-                            </div>
-                            <p> A calming space with natural elements and plants</p>
-                        </div>
-                    </div>
-
-                    <div className="living-box">
-                        <div className="living-content">
-                            <h2>Vintage Chic Living Room</h2>
-                            <div className="living-image">
-                            <img src={Vintage} alt="Family Living Room" />
-                            </div>
-                            <p>A nostalgic space with retro furniture and antique decor.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-           </div>
+                ))}
+            </div>
         </div>
-    )
+    );
 }
+
 export default BedSection;
