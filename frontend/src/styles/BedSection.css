@@ -87,48 +87,43 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 10px; /* Consistent gap between items */
+    gap: 10px; 
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
 
 .bed-section h2 {
-    font-size: 24px; /* Consistent font size */
+    font-size: 24px; 
     text-align: center;
     margin-bottom: 15px;
 }
 
-.bed-section p a {
-    font-size: 16px;
-    font-weight: bold;
-    color: #1a1a1a; /* Dark color for links */
-    text-decoration: none; /* Remove underline */
-}
-
-.bed-section p a:hover {
-    cursor: pointer;
-    color: rgb(230, 142, 28); /* Orange color on hover */
+.bed-section p {
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: #1a1a1a; 
+    text-decoration: none;
 }
 
 .Bed-box {
-    height: 500px; /* Fixed height for consistency */
-    width: 30%; /* Fixed width for two columns */
-    margin: 20px; /* Margin around each box */
+    height: 500px; 
+    width: 30%; 
+    margin: 20px;
 }
 
 .Bed-image img {
-    height: 350px; /* Fixed height for images */
-    width: 100%; /* Full width of the container */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    margin-top: 1rem; /* Spacing above the image */
-    margin-bottom: 1rem; /* Spacing below the image */
-    border-radius: 8px; /* Rounded corners */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    height: 350px;
+    width: 100%; 
+    object-fit: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+    border-radius: 8px; 
+    transition: all 0.3s ease-in-out; 
 }
 
 .Bed-image img:hover {
     cursor: pointer;
-    animation: shrinkEffect 0.5s ease-in-out forwards; /* Hover animation */
+    animation: shrinkEffect 0.5s ease-in-out forwards; 
 }
 
 @keyframes shrinkEffect {
@@ -137,8 +132,8 @@
         opacity: 1;
     }
     100% {
-        transform: scale(0.9); /* Shrinks the element */
-        opacity: 0.9; /* Slight fade */
+        transform: scale(0.9); 
+        opacity: 0.9; 
     }
 }
 
