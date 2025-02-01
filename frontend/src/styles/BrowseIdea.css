@@ -34,7 +34,7 @@ body, html {
     display: flex;
     justify-content: center; 
     flex-wrap: wrap; /* Wrap items to the next line if needed */
-    gap: 50px; 
+    gap: 60px; 
 }
 
 .box-content div {

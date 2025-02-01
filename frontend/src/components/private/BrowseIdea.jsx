@@ -9,7 +9,6 @@ import rusticImage from "../../assets/images/rustic.jpg";
 import bohemianImage from "../../assets/images/bohemian.jpg";
 import minimalistImage from "../../assets/images/minimalist.jpg";
 import traditionalImage from "../../assets/images/traditional.jpg";
-import contemporaryImage from "../../assets/images/contemporary.jpg";
 import budgetFriendlyImage from "../../assets/images/budget.jpg";
 import luxuryImage from "../../assets/images/luxury.jpg";
 import { useNavigate } from "react-router-dom";
@@ -41,16 +40,14 @@ function BrowseIdea() {
             items: [
                 { name: "Rustic", path: "/RusticSection" },
                 { name: "Bohemian", path: "/BohemianSection" },
-                { name: "Minimalist", path: "/MinimalistSection" },
-                { name: "Traditional", path: "/TraditionalSection" },
-                { name: "Contemporary", path: "/ContemporarySection" }
+                { name: "Contemporary-Minimalist", path: "/MinimalistSection" },
+                { name: "Traditional", path: "/TraditionalSection" }
             ],
             images: [
                 rusticImage,
                 bohemianImage,
                 minimalistImage,
                 traditionalImage,
-                contemporaryImage
             ]
         },
         {
